@@ -1,0 +1,69 @@
+# anicca-genesis .gitignore
+#
+# Principle: PUSH the live ledger (decisions, heartbeats, payouts, violations),
+#            NEVER push secrets, runtime caches, binaries, or PII conversations.
+#
+# Whitelist what we DO push:
+#   cron/jobs.json            ← the schedule
+#   scripts/*.sh              ← cron wrappers (paths to canonical anicca-oss)
+#   state/*.jsonl             ← daily-rotated ledgers (public, immutable history)
+#   SOUL.md                   ← identity
+#   AGENTS.md                 ← agent instructions
+#   README.md, LICENSE        ← docs
+
+# ─── SECRETS — NEVER PUSH ───
+config.yaml
+config.yaml.bak.*
+auth.json
+auth.lock
+.env
+.env.*
+!.env.example
+secrets/
+**/private/
+
+# ─── runtime caches & binaries — too big / not portable ───
+audio_cache/
+image_cache/
+cache/
+backups/
+bin/
+hermes-agent
+hermes-agent.*
+
+# ─── runtime locks & pids ───
+*.lock
+*.pid
+gateway_state.json
+gateway.pid
+gateway.lock
+
+# ─── sqlite (binary, regenerable) ───
+*.db
+*.db-shm
+*.db-wal
+
+# ─── PII / conversation history (private) ───
+sessions/
+sandboxes/
+pairing/
+memories/
+hooks/
+migration/
+
+# ─── dev/build artefacts ───
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+.venv/
+venv/
+
+# ─── model caches ───
+context_length_cache.yaml
+models_dev_cache.json
+
+# ─── OS / editor ───
+.DS_Store
+*.swp
+*~

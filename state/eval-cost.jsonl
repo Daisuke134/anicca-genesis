@@ -1,0 +1,5 @@
+{"ts": "2026-06-04T15:48:08Z", "backend": "hermes_copilot", "model": "gpt-4o-mini", "dim_count": 4, "total": 0.75, "pass": true, "cost_usd": 0.0, "via": "gh_auth_subscription", "elapsed_s": 167.016, "rubric_task_class": "post-to-x"}
+{"ts": "2026-06-04T15:49:38Z", "backend": "hermes_copilot", "model": "gpt-4o-mini", "dim_count": 4, "total": 0.25, "pass": false, "cost_usd": 0.0, "via": "gh_auth_subscription", "elapsed_s": 74.798, "rubric_task_class": "post-to-x"}
+{"ts": "2026-06-04T15:49:48Z", "backend": "heuristic", "model": null, "dim_count": 4, "total": 0.7, "pass": false, "cost_usd": 0.0, "via": null, "elapsed_s": 0.0, "rubric_task_class": "post-to-x"}
+{"ts": "2026-06-04T22:09:30Z", "backend": "hermes_copilot", "model": "gpt-4o-mini", "dim_count": 4, "total": 0.5, "pass": false, "cost_usd": 0.0, "via": "gh_auth_subscription", "elapsed_s": 60.245, "rubric_task_class": "default"}
+{"ts": "2026-06-05T04:14:12Z", "backend": "hermes_copilot", "model": "gpt-4o-mini", "dim_count": 4, "total": 0.55, "pass": false, "cost_usd": 0.0, "via": "gh_auth_subscription", "elapsed_s": 132.721, "rubric_task_class": "default"}
